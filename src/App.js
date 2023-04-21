@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import './App.css';
-import AutoCity from './components/AutoCity';
-import Forecast from './Forecast';
-import React from 'react';
-import Essentials from './components/essentials';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./App.css";
+import AutoCity from "./components/AutoCity";
+import Forecast from "./Forecast";
+import React from "react";
+import Essentials from "./components/essentials";
+import Recommender from "./components/MusicRecommender/MusicRecommender";
 
 function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [city, setCity] = useState('Mumbai');
+  const [city, setCity] = useState("Mumbai");
   const [results, setResults] = useState(null);
 
   const handleSelect = (suggestion) => {
@@ -24,7 +25,7 @@ function App() {
         .then((res) => res.json())
         .then(
           (result) => {
-            if (result['cod'] !== 200) {
+            if (result["cod"] !== 200) {
               setIsLoaded(false);
             } else {
               setIsLoaded(true);
@@ -53,9 +54,9 @@ function App() {
             Google Map Coming Soon
           </div>
           <div className="weather__placeholder weather__placeholder--2">
+            <Recommender mood="Raining" /> {/**I need like the weather type (cold, rainning, cloudy, sunny - you get the idea) passed as props through 'mood' prop */}
             Playlist
             <br />
-            Coming Soon
           </div>
         </div>
 
