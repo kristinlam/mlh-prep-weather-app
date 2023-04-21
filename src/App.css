@@ -54,14 +54,8 @@ p.weather__search--prompt {
 
 /* Column 2 */
 .weather__essentials {
-  background-color: #d3d3d3;
-  border-radius: 1rem;
   padding: 1.5rem 2rem;
   margin-bottom: 1rem;
-}
-
-.weather__essentials p {
-  color: #333;
 }
 
 /* Column 3 */
@@ -74,8 +68,8 @@ p.weather__search--prompt {
 .weather__cta {
   padding: 1rem 1.2rem;
   border-radius: 1rem;
-  color: #333;
-  background-color: #d3d3d3;
+  color: #fff;
+  border: 3px solid #d3d3d3;
 }
 
 .weather__cta a:link,
@@ -101,7 +95,7 @@ p.weather__search--prompt {
 }
 
 .weather__cta--trip button {
-  background-color: #829cbc;
+  background-color: #8bd8f9;
 }
 
 .weather__cta--climate button {
