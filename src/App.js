@@ -49,8 +49,14 @@ function App() {
             <p className="weather__search--prompt">Enter a city</p>
             <AutoCity onSelect={handleSelect} />
           </div>
-          <div className="weather__placeholder--1">Google Map component</div>
-          <div className="weather__placeholder--2">Playlist component</div>
+          <div className="weather__placeholder weather__placeholder--1">
+            Google Map Coming Soon
+          </div>
+          <div className="weather__placeholder weather__placeholder--2">
+            Playlist
+            <br />
+            Coming Soon
+          </div>
         </div>
 
         {/* Column 2 */}
