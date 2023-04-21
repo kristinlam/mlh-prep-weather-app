@@ -39,11 +39,11 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .weather__search {
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 p.weather__search--prompt {
@@ -52,10 +52,15 @@ p.weather__search--prompt {
   text-align: left;
 }
 
+.weather__col--2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 /* Column 2 */
 .weather__essentials {
   padding: 1.5rem 2rem;
-  margin-bottom: 1rem;
 }
 
 /* Column 3 */
@@ -116,7 +121,6 @@ p.weather__search--prompt {
 
 .weather__placeholder--1 {
   height: 24.2rem;
-  margin-bottom: 1.5rem;
 }
 
 .weather__placeholder--2 {
