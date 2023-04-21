@@ -65,7 +65,7 @@ function App() {
           {isLoaded && results && (
             <div>
               <div className="results__main">
-                <h3>{results.weather[0].main}</h3>
+                <h2>{results.weather[0].main}</h2>
                 <p>Feels like {results.main.feels_like}°C</p>
                 <i>
                   <p>

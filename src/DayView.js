@@ -27,6 +27,7 @@ const DayView = ({ day, todayDate }) => {
     <div className="view">
       <p className="view__heading">
 	{DayName(day, todayDate)}
+  <hr></hr>
       </p>
 
       <div className="view__hours">{renderedHours}</div>
